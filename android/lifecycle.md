@@ -1,3 +1,4 @@
+# Activity
 <img src="https://github.com/MananDhiman/Code-Snippets/assets/64782929/cf722766-0853-456f-a9c6-8ac449711ed2" width="500" alt="android activity lifecycle diagram">
 
 **Nonexistent** represents an activity that has not been launched yet or an activity that was just destroyed (by pressing the Back button). sometimes referred to as the **“destroyed”** state. There is no instance in memory, and there is no associated view.
@@ -15,3 +16,17 @@ It is important to understand that you never call onCreate(Bundle?) or any of th
 Rotating the device changes the device configuration. The device configuration is a set of characteristics that describe the current state of an individual device. The characteristics that make up the configuration include screen orientation, screen density, screen size, keyboard type, dock mode, language, and more.
 
 When a runtime configuration change occurs, there may be resources that are a better match for the new configuration. So Android destroys the activity, looks for resources that are the best fit for the new configuration, and then rebuilds a new instance of the activity with those resources.
+
+# Fragment
+* onAttach -> attaches to host
+* onCreate -> instance initialises
+* onCreateview -> creates portion of view hierarchy
+* onActivitycCreated (fragment’s) -> finished oncreate
+* onStart -> visible
+* onResume -> visible and interactable
+* onPause -> no longer interactable
+* onStop -> no longer visible
+* onDestroyView -> view and resources are removed from hierarchy
+* onDestroy -> does clean up
+* onDetach -> fragment detached form activity
+
